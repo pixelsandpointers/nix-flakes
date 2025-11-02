@@ -1,0 +1,72 @@
+BasedOnStyle: LLVM
+
+# --- Indentation & spacing ---
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ContinuationIndentWidth: 2
+ColumnLimit: 100
+IndentCaseLabels: true
+
+# --- Braces ---
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# --- Pointers & references ---
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# --- Spacing rules ---
+SpaceAfterCStyleCast: true
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInAngles: false
+SpaceBeforeAssignmentOperators: true
+SpaceAfterTemplateKeyword: true
+
+# --- Alignment ---
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Left
+AlignOperands: true
+AlignTrailingComments: true
+
+# --- Comments ---
+ReflowComments: false
+SortIncludes: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# --- Includes ---
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<.*>'
+    Priority: 1
+  - Regex: '.*'
+    Priority: 2
+
+# --- Naming preferences (not enforced but stylistically matching) ---
+DerivePointerAlignment: false
+
+# --- Misc ---
+BinPackParameters: false
+BinPackArguments: false
+Cpp11BracedListStyle: true
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+
